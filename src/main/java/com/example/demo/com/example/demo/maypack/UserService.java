@@ -28,8 +28,8 @@ public class  UserService {
         
     }
 
-    public void deleteUser(String id) {
-        userrepository.delete(Integer.parseInt(id));
+    public void deleteUser(User user) {
+        userrepository.delete(user);
     }
 
     public void updateUser(User user) {

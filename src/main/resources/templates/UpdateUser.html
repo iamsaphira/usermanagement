@@ -29,7 +29,9 @@
 
     <p>&nbsp;&nbsp;</p>
     <form method="post" action="/modifyuser" modelAttribute="user">
-        Id:<span type="number" name="id" id="id" th:text="${currentuser.getId()}"></span>
+        <input type="hidden" name="id" th:value="${currentuser.getId()}" />
+        Id:<span type="number" id="id"
+                 th:text="${currentuser.getId()}"></span>
         Name : <input type="text" name="name" id="name" th:value="${currentuser.getName()}" />
         Email : <input type="text" name="emailadd" id="emailadd" th:value="${currentuser.getEmailadd()}" />
         <button>UPDATE</button>
