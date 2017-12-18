@@ -1,7 +1,11 @@
 
 body {
-    background-color: #999bcb;
+
     margin: 0;
+
+    background: linear-gradient(to right, #999bcb, #1b0c44
+    );
+
 }
 
 ul {
@@ -9,7 +13,7 @@ ul {
     margin: 0;
     padding: 0;
     width: 25%;
-    background-color: black;
+    background: linear-gradient(to left, #000000, rgba(228, 38, 11, 0.83));
     position: fixed;
     height: 100%;
     overflow: auto;
